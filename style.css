@@ -1,0 +1,93 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap');
+body {
+    background-image: url('img/horizon-line-sky-people.jpeg');
+    background-size: cover ;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    position: relative;
+    font-family: 'Oswald', sans-serif;
+    display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+}
+  .line {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 0;
+    height: 2px;
+    background-color: #fff;
+    transform-origin: center;
+    /* animation: openScreen 2s ease-out forwards; */
+  }
+  
+  @keyframes openScreen {
+    0% {
+      width: 0;
+      transform: translate(-50%, -50%) scaleX(1);
+    }
+    50% {
+      width: 80%;
+      top:50%;
+      transform: translate(-50%, -50%) scaleX(1);
+    }
+    100% {
+      width: 80%;
+      top:30%;
+      transform: translate(-50%, -50%) scaleX(1);
+    }
+  }
+
+
+  .line2 {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 0;
+    height: 2px;
+    background-color: #fff;
+    transform-origin: center;
+    /* animation: openScreen2 2s ease-out forwards; */
+  }
+  
+  @keyframes openScreen2 {
+    0% {
+      width: 0;
+      transform: translate(-50%, -50%) scaleX(1);
+    }
+    50% {
+      width: 80%;
+      top:50%;
+      transform: translate(-50%, -50%) scaleX(1);
+    }
+    100% {
+      width: 80%;
+      top:70%;
+      transform: translate(-50%, -50%) scaleX(1);
+    }
+  }
+
+  .typing-text {
+    margin: 0 10%;
+    font-family: 'Courier New', monospace;
+    font-size: 1em;
+    overflow: hidden;
+    color:white;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 300;
+    text-align: justify;
+  }
+
+  @keyframes typing {
+    from {
+      width: 0;
+    }
+    to {
+      width: 100%;
+    }
+  }
+  
